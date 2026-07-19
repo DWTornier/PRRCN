@@ -3,8 +3,6 @@ name: Build APK
 on:
   push:
     branches: [ main, master ]
-    paths-ignore:
-      - 'ci-build-errors.txt'
   workflow_dispatch:
 
 permissions:
@@ -39,7 +37,7 @@ jobs:
           set -o pipefail
           ./gradlew assembleDebug --stacktrace 2>&1 | tee build.log
 
-      # 构建失败时：把编译错误提取出来，提交回仓库（带 [skip ci] 避免死循环）
+      # 构建失败时：把编译错误提取出来，推到独立的 ci-logs 分支（不污染 main）
       - name: Publish build errors on failure
         if: steps.build.outcome != 'success'
         run: |
@@ -56,13 +54,16 @@ jobs:
             echo '```'
             tail -n 150 build.log
             echo '```'
-          } > ci-build-errors.txt
+          } > /tmp/ci-build-errors.txt
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          # 用孤立分支，只放这一个文件，强制推送，绝不影响 main
+          git checkout --orphan ci-logs
+          git rm -rf --cached . >/dev/null 2>&1 || true
+          cp /tmp/ci-build-errors.txt ci-build-errors.txt
           git add ci-build-errors.txt
-          git commit -m "ci: build error report [skip ci]" || echo "no changes to commit"
-          git pull --rebase --autostash origin "${{ github.ref_name }}" || true
-          git push origin "HEAD:${{ github.ref_name }}" || true
+          git commit -m "ci: build error report" || echo "no changes"
+          git push -f origin ci-logs || true
 
       - name: Upload build log artifact
         if: always()
