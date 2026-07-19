@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">PR²CN</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">首页</string>
+    <string name="nav_vaults">保险库</string>
+    <string name="nav_settings">设置</string>
+
+    <!-- Home -->
+    <string name="home_title">PR²CN</string>
+    <string name="home_recent">最近导入</string>
+    <string name="home_empty_title">还没有任何隐私媒体</string>
+    <string name="home_empty_desc">点击下方按钮，从相册选择音视频、图片、GIF 或实况照片，打包进加密保险库。</string>
+    <string name="home_import">导入媒体</string>
+
+    <!-- Picker -->
+    <string name="picker_title">选择媒体</string>
+    <string name="picker_pack">打包 (%1$d)</string>
+    <string name="picker_permission_title">需要访问媒体</string>
+    <string name="picker_permission_desc">PR²CN 需要读取相册中的媒体才能将其打包隐藏。授权后你选择的媒体会被移动进保险库。</string>
+    <string name="picker_grant">授权访问</string>
+
+    <!-- Vault -->
+    <string name="vault_items">%1$d 项</string>
+    <string name="vault_empty">该保险库为空</string>
+    <string name="vault_export">导出到相册</string>
+    <string name="vault_delete">删除</string>
+
+    <!-- Settings -->
+    <string name="settings_appearance">外观</string>
+    <string name="settings_theme">主题模式</string>
+    <string name="settings_theme_system">跟随系统</string>
+    <string name="settings_theme_light">浅色</string>
+    <string name="settings_theme_dark">深色</string>
+    <string name="settings_dynamic_bg">动态磨砂背景</string>
+    <string name="settings_dynamic_bg_desc">以最近浏览媒体的主色渲染亚克力磨砂背景</string>
+    <string name="settings_storage">存储</string>
+    <string name="settings_location">保险库位置</string>
+    <string name="settings_location_desc">默认为存储卡根目录下的 PRRCN 文件夹</string>
+    <string name="settings_delete_source">导入后删除原文件</string>
+    <string name="settings_delete_source_desc">打包成功后从相册移除原始媒体（更彻底地规避检索）</string>
+    <string name="settings_about">关于</string>
+</resources>
