@@ -19,7 +19,18 @@ android {
         }
     }
 
+    signingConfigs {
+        debug {
+            // 显式开启全部签名方案，兼容部分国产 ROM 强制校验 v1(JAR) 签名的情况
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
+    }
+
     buildTypes {
+        debug {
+            signingConfig signingConfigs.debug
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
@@ -42,6 +53,10 @@ android {
     packaging {
         resources {
             excludes += '/META-INF/{AL2.0,LGPL2.1}'
+        }
+        jniLibs {
+            // 用传统方式打包 .so（压缩、页对齐兼容），规避部分国产 ROM 安装器崩溃
+            useLegacyPackaging true
         }
     }
 }
