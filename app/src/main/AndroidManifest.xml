@@ -18,9 +18,9 @@
     <application
         android:name=".PrrcnApplication"
         android:allowBackup="true"
-        android:icon="@mipmap/prrcnxxxhdpi"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/prrcnxxxhdpi"
+        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:requestLegacyExternalStorage="true"
         android:hardwareAccelerated="true"

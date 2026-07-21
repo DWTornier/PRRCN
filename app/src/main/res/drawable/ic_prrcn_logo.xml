@@ -1,44 +1,68 @@
+<!-- Converted from the official prrcn.svg brand logo -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="108dp"
     android:height="108dp"
-    android:viewportWidth="108"
-    android:viewportHeight="108">
+    android:viewportWidth="2834.65"
+    android:viewportHeight="2834.65">
 
-    <!-- 箱体正面（浅棕） -->
+    <!-- 图层_6：箱体 -->
     <path
-        android:fillColor="#D9A968"
-        android:pathData="M12,44 L54,58 L54,100 L12,86 Z" />
-    <!-- 箱体右侧面（深棕） -->
+        android:fillColor="#b78748"
+        android:pathData="M1417.5,2834.65 L2834.65,2362.21 L2834.65,1025 L2598.43,944.97 L1417.33,1338.59 L236.22,944.88 L0,1023.62 L1417.5,1494.05 Z" />
     <path
-        android:fillColor="#B9863F"
-        android:pathData="M96,44 L54,58 L54,100 L96,86 Z" />
-    <!-- 正面胶带 -->
-    <path
-        android:fillColor="#4D4D4D"
-        android:pathData="M28,49 L38,52.3 L38,62 L28,58.7 Z" />
-    <path
-        android:fillColor="#4D4D4D"
-        android:pathData="M42,53.6 L50,56.3 L50,66 L42,63.3 Z" />
-    <!-- 右侧胶带 -->
-    <path
-        android:fillColor="#4D4D4D"
-        android:pathData="M70,52 L82,48 L82,64 L70,68 Z" />
+        android:fillColor="#e2ae5a"
+        android:pathData="M1417.5,2834.65 L1417.5,1494.05 L0,1023.62 L0,2362.21 Z" />
 
-    <!-- 箱盖（金色） -->
+    <!-- 基底：箱盖 -->
     <path
-        android:fillColor="#FFC107"
-        android:pathData="M54,10 L96,24 L54,38 L12,24 Z" />
-    <!-- 箱盖高光条（浅灰） -->
+        android:fillColor="#ffc400"
+        android:pathData="M1417.33,0 L0,472.44 L1417.33,944.88 L2834.65,472.44 Z" />
     <path
-        android:fillColor="#D8D8D8"
-        android:pathData="M96,24 L96,40 L60,52 L60,36 Z" />
-    <!-- 箱盖描边（橙） -->
+        android:fillColor="#cccccc"
+        android:pathData="M1417.33,1417.5 L2834.65,944.88 L2834.65,472.44 L1417.33,944.88 Z" />
     <path
-        android:fillColor="#F0A814"
-        android:pathData="M54,38 L60,36 L60,52 L54,54 Z" />
+        android:fillColor="#ffc400"
+        android:pathData="M0,944.88 L1417.33,1417.5 L1417.33,944.88 L0,472.44 Z" />
 
-    <!-- 箱盖上的 "P"（白色，简化几何造型） -->
+    <!-- 胶带 -->
     <path
-        android:fillColor="#FFFFFF"
-        android:pathData="M46,18 L52,20 L52,32 L48,30.7 L48,25 L46,24.3 Z M53,20.3 L60,22.7 L60,28 L53,25.6 Z" />
+        android:fillColor="#4d4d4d"
+        android:pathData="M2362.21,1338.59 L2362.21,1181.1 L2125.99,1102.36 L1653.55,1259.84 L1889.77,1338.59 L1889.77,1492.03 L2362.21,1338.59 Z" />
+    <path
+        android:fillColor="#4d4d4d"
+        android:pathData="M1889.77,1492.03 L1889.77,1649.51 L2362.21,1492.03 L2362.21,1338.59 Z" />
+    <path
+        android:fillColor="#4d4d4d"
+        android:pathData="M1338.59,1570.77 L1102.36,1494.05 L1102.36,1728.25 L1338.59,1802.96 Z" />
+    <path
+        android:fillColor="#4d4d4d"
+        android:pathData="M1023.09,1468.27 L786.86,1391.55 L786.86,1625.75 L1023.09,1700.46 Z" />
+    <path
+        android:fillColor="#4d4d4d"
+        android:pathData="M1023.62,1700.66 L1023.62,1468.47 L866.14,1417.33 L866.14,1649.51 Z" />
+
+    <!-- 细节：箱盖橙色描边 -->
+    <path
+        android:fillColor="#ffab00"
+        android:pathData="M1417.33,1417.5 L2834.65,944.88 L2834.65,866.14 L1417.33,1338.59 Z" />
+    <path
+        android:fillColor="#ffab00"
+        android:pathData="M1417.5,1023.62 L2834.65,551.18 L2834.65,472.44 L1417.33,944.88 Z" />
+    <path
+        android:fillColor="#ffab00"
+        android:pathData="M1417.33,944.88 L1496.07,918.64 L1496.07,1391.24 L1417.33,1417.5 Z" />
+
+    <!-- P 字母 -->
+    <path
+        android:fillColor="#ffffff"
+        android:pathData="M1062.99,433.07 L1417.33,314.96 L1299.21,275.59 L826.77,433.07 L1417.5,629.98 L1535.57,590.6 L1062.99,433.07 Z" />
+    <path
+        android:fillColor="#ffffff"
+        android:pathData="M1417.5,629.98 L1653.55,708.66 L1771.57,669.32 L1535.57,590.6 Z" />
+    <path
+        android:fillColor="#ffffff"
+        android:pathData="M1299.21,511.81 L1653.55,393.7 L1535.57,354.38 L1181.1,472.44 Z" />
+    <path
+        android:fillColor="#ffffff"
+        android:pathData="M1299.21,275.59 L1653.55,393.7 L1535.37,433.09 L1181.17,314.98 Z" />
 </vector>

@@ -1,0 +1,4 @@
+<!-- Adaptive-icon foreground: brand logo inset into the safe zone -->
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/ic_prrcn_logo"
+    android:inset="18%" />
