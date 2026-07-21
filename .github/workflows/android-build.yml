@@ -81,6 +81,15 @@ jobs:
           path: app/build/outputs/apk/debug/*.apk
           if-no-files-found: error
 
+      # 构建成功后发布到固定 Release，提供可匿名下载的稳定链接
+      - name: Publish APK to Release
+        if: steps.build.outcome == 'success'
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: debug
+          name: Latest debug build
+          files: app/build/outputs/apk/debug/*.apk
+
       - name: Fail job if build failed
         if: steps.build.outcome != 'success'
         run: exit 1

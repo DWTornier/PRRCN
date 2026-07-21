@@ -105,7 +105,7 @@ private fun HomeHeader() {
         verticalAlignment = Alignment.CenterVertically
     ) {
         Image(
-            painter = painterResource(R.mipmap.prrcnxxxhdpi),
+            painter = painterResource(R.drawable.ic_prrcn_logo),
             contentDescription = null,
             modifier = Modifier.size(44.dp)
         )
@@ -136,7 +136,7 @@ private fun EmptyHome(contentPadding: PaddingValues, onImport: () -> Unit) {
             verticalArrangement = Arrangement.Center
         ) {
             Image(
-                painter = painterResource(R.mipmap.prrcnxxxhdpi),
+                painter = painterResource(R.drawable.ic_prrcn_logo),
                 contentDescription = null,
                 modifier = Modifier.size(96.dp)
             )
